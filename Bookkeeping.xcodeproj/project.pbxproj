@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EA04EEB929B933FD00C93D48 /* ExpenseDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA04EEB829B933FD00C93D48 /* ExpenseDayView.swift */; };
+		EA0C281E29B5D8B300D004F7 /* AccountListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0C281D29B5D8B300D004F7 /* AccountListCellView.swift */; };
+		EA0C282029B5DA0800D004F7 /* AccountListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0C281F29B5DA0800D004F7 /* AccountListView.swift */; };
+		EA0C282229B5DC4100D004F7 /* AccountDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0C282129B5DC4100D004F7 /* AccountDetailView.swift */; };
+		EA0C282429B6983900D004F7 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0C282329B6983900D004F7 /* ChartView.swift */; };
 		EAFA9FA529B5573F00F1D35F /* BookkeepingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFA9FA429B5573F00F1D35F /* BookkeepingApp.swift */; };
 		EAFA9FA729B5573F00F1D35F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAFA9FA629B5573F00F1D35F /* ContentView.swift */; };
 		EAFA9FA929B5574000F1D35F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EAFA9FA829B5574000F1D35F /* Assets.xcassets */; };
@@ -34,6 +39,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		EA04EEB829B933FD00C93D48 /* ExpenseDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseDayView.swift; sourceTree = "<group>"; };
+		EA0C281D29B5D8B300D004F7 /* AccountListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListCellView.swift; sourceTree = "<group>"; };
+		EA0C281F29B5DA0800D004F7 /* AccountListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListView.swift; sourceTree = "<group>"; };
+		EA0C282129B5DC4100D004F7 /* AccountDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailView.swift; sourceTree = "<group>"; };
+		EA0C282329B6983900D004F7 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		EAFA9FA129B5573F00F1D35F /* Bookkeeping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bookkeeping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAFA9FA429B5573F00F1D35F /* BookkeepingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookkeepingApp.swift; sourceTree = "<group>"; };
 		EAFA9FA629B5573F00F1D35F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -72,6 +82,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EA04EEB629B9338B00C93D48 /* Accounts */ = {
+			isa = PBXGroup;
+			children = (
+				EA0C281F29B5DA0800D004F7 /* AccountListView.swift */,
+				EA0C282129B5DC4100D004F7 /* AccountDetailView.swift */,
+				EA0C281D29B5D8B300D004F7 /* AccountListCellView.swift */,
+			);
+			path = Accounts;
+			sourceTree = "<group>";
+		};
+		EA04EEB729B933BE00C93D48 /* Books */ = {
+			isa = PBXGroup;
+			children = (
+				EA04EEB829B933FD00C93D48 /* ExpenseDayView.swift */,
+			);
+			path = Books;
+			sourceTree = "<group>";
+		};
 		EAFA9F9829B5573F00F1D35F = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +125,9 @@
 			children = (
 				EAFA9FA429B5573F00F1D35F /* BookkeepingApp.swift */,
 				EAFA9FA629B5573F00F1D35F /* ContentView.swift */,
+				EA04EEB729B933BE00C93D48 /* Books */,
+				EA04EEB629B9338B00C93D48 /* Accounts */,
+				EA0C282329B6983900D004F7 /* ChartView.swift */,
 				EAFA9FA829B5574000F1D35F /* Assets.xcassets */,
 				EAFA9FAA29B5574000F1D35F /* Bookkeeping.entitlements */,
 				EAFA9FAB29B5574000F1D35F /* Preview Content */,
@@ -259,8 +290,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA04EEB929B933FD00C93D48 /* ExpenseDayView.swift in Sources */,
+				EA0C282029B5DA0800D004F7 /* AccountListView.swift in Sources */,
 				EAFA9FA729B5573F00F1D35F /* ContentView.swift in Sources */,
+				EA0C281E29B5D8B300D004F7 /* AccountListCellView.swift in Sources */,
+				EA0C282229B5DC4100D004F7 /* AccountDetailView.swift in Sources */,
 				EAFA9FA529B5573F00F1D35F /* BookkeepingApp.swift in Sources */,
+				EA0C282429B6983900D004F7 /* ChartView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,6 +448,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Bookkeeping/Bookkeeping.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Bookkeeping/Preview Content\"";
@@ -472,7 +509,7 @@
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 13.1;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Kristian-Mitchell.Bookkeeping";
+				PRODUCT_BUNDLE_IDENTIFIER = "Kristian-Mitchell-example.Bookkeeping";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
