@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		EA04EEB929B933FD00C93D48 /* ExpenseDayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA04EEB829B933FD00C93D48 /* ExpenseDayView.swift */; };
+		EA04EEBD29B942D500C93D48 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA04EEBC29B942D500C93D48 /* Expense.swift */; };
 		EA0C281E29B5D8B300D004F7 /* AccountListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0C281D29B5D8B300D004F7 /* AccountListCellView.swift */; };
 		EA0C282029B5DA0800D004F7 /* AccountListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0C281F29B5DA0800D004F7 /* AccountListView.swift */; };
 		EA0C282229B5DC4100D004F7 /* AccountDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0C282129B5DC4100D004F7 /* AccountDetailView.swift */; };
@@ -40,6 +41,7 @@
 
 /* Begin PBXFileReference section */
 		EA04EEB829B933FD00C93D48 /* ExpenseDayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseDayView.swift; sourceTree = "<group>"; };
+		EA04EEBC29B942D500C93D48 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 		EA0C281D29B5D8B300D004F7 /* AccountListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListCellView.swift; sourceTree = "<group>"; };
 		EA0C281F29B5DA0800D004F7 /* AccountListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListView.swift; sourceTree = "<group>"; };
 		EA0C282129B5DC4100D004F7 /* AccountDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailView.swift; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 		EA04EEBB29B93A3D00C93D48 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EA04EEBC29B942D500C93D48 /* Expense.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -306,6 +309,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA04EEBD29B942D500C93D48 /* Expense.swift in Sources */,
 				EA04EEB929B933FD00C93D48 /* ExpenseDayView.swift in Sources */,
 				EA0C282029B5DA0800D004F7 /* AccountListView.swift in Sources */,
 				EAFA9FA729B5573F00F1D35F /* ContentView.swift in Sources */,
