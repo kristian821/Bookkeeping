@@ -7,12 +7,12 @@
 
 import Foundation
 
-struct Expense: Codable, Identifiable {
+struct Expense: Identifiable {
     let id: UUID
     var name: String
     var amount: Double
     var transactionDate: Date?
     var startDate: Date?
     var endDate: Date?
-    
+    var recurring: Bool
 }
