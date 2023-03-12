@@ -11,6 +11,4 @@ import Combine
 struct Balance {
     var startBalance: Double
     var endBalance: Double?
-    var newBalance: Double?
-    var oldBalance: Double?
 }

@@ -8,11 +8,15 @@
 import Foundation
 
 struct Expense: Identifiable {
-    let id: UUID
+    let id = UUID()
     var name: String
     var amount: Double
     var transactionDate: Date?
     var startDate: Date?
     var endDate: Date?
-    var recurring: Bool
+    var recurring: Bool = false
+    
+    func newExpense(name: String, amount: Double, transactionDate: Date?, startDate: Date?, endDate: Date?, recurring: Bool) -> Expense {
+        return Expense(name: name, amount: amount, transactionDate: transactionDate, startDate: startDate, endDate: endDate, recurring: recurring)
+    }
 }
