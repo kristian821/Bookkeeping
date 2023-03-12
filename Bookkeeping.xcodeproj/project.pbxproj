@@ -99,8 +99,6 @@
 		EA04EEB729B933BE00C93D48 /* Books */ = {
 			isa = PBXGroup;
 			children = (
-				EA04EEBB29B93A3D00C93D48 /* Model */,
-				EA04EEBA29B93A3000C93D48 /* View */,
 			);
 			path = Books;
 			sourceTree = "<group>";
@@ -108,6 +106,8 @@
 		EA04EEBA29B93A3000C93D48 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				EA04EEB629B9338B00C93D48 /* Accounts */,
+				EA04EEB729B933BE00C93D48 /* Books */,
 				EA04EEB829B933FD00C93D48 /* ExpenseDayView.swift */,
 			);
 			path = View;
@@ -147,8 +147,8 @@
 			children = (
 				EAFA9FA429B5573F00F1D35F /* BookkeepingApp.swift */,
 				EAFA9FA629B5573F00F1D35F /* ContentView.swift */,
-				EA04EEB729B933BE00C93D48 /* Books */,
-				EA04EEB629B9338B00C93D48 /* Accounts */,
+				EA04EEBB29B93A3D00C93D48 /* Model */,
+				EA04EEBA29B93A3000C93D48 /* View */,
 				EA0C282329B6983900D004F7 /* ChartView.swift */,
 				EAFA9FA829B5574000F1D35F /* Assets.xcassets */,
 				EAFA9FAA29B5574000F1D35F /* Bookkeeping.entitlements */,
