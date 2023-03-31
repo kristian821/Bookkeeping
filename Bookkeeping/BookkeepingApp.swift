@@ -11,7 +11,7 @@ import SwiftUI
 struct BookkeepingApp: App {
     var body: some Scene {
         WindowGroup {
-            AccountListView()
+            ContentView()
         }
     }
 }

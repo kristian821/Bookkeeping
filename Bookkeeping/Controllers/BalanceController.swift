@@ -11,13 +11,22 @@ import Combine
 class BalanceController: ObservableObject {
     var balance = Balance(startBalance: 0)
     
-    func fetchBalance() -> Double {
+    func currentBalance() -> Double {
         return balance.endBalance ?? balance.startBalance
+    }
+    
+    func fetchBalance() -> Double {
+                return currentBalance()
     }
     
     func updateBalance(expense: Expense) -> Double {
         balance.endBalance = balance.startBalance + expense.amount
-        return fetchBalance()
+        
+        return currentBalance()
     }
+ 
     
+    enum BalanceError: Error, LocalizedError {
+        case balanceError
+    }
 }

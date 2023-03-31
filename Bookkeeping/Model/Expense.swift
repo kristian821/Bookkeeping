@@ -19,4 +19,6 @@ struct Expense: Identifiable {
     func newExpense(name: String, amount: Double, transactionDate: Date?, startDate: Date?, endDate: Date?, recurring: Bool) -> Expense {
         return Expense(name: name, amount: amount, transactionDate: transactionDate, startDate: startDate, endDate: endDate, recurring: recurring)
     }
+    
 }
+

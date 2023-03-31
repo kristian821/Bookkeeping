@@ -8,23 +8,27 @@
 import SwiftUI
 
 struct ExpenseDayView: View {
+    var balanceController = BalanceController()
+    var expenseController = ExpenseController()
+    
     var body: some View {
         VStack {
             HStack {
-                Text("Starting Balance:").font(.headline
+                Text("Starting\nBalance:").font(.headline
                 )
                 Spacer()
-                Text("$150").font(.title).foregroundColor(.green)
+                Text("$\(balanceController.currentBalance())").font(.title).foregroundColor(.green)
+                Spacer()
             }
             .padding()
             Form {
-                List(/*@START_MENU_TOKEN@*/0 ..< 5/*@END_MENU_TOKEN@*/) { item in
-                    Text("transaction")
+                List(expenseController.expenses) { expense in
+//                    ExpenseCell
                 }
             }
             VStack {
                 Text("Remaining Balance:").font(.headline)
-                Text("$150").font(.largeTitle).foregroundColor(.green)
+                Text("$\(balanceController.fetchBalance())").font(.largeTitle).foregroundColor(.green)
             }
             .padding()
         }

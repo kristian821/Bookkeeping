@@ -11,6 +11,8 @@
 		EA04EEBD29B942D500C93D48 /* Expense.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA04EEBC29B942D500C93D48 /* Expense.swift */; };
 		EA04EEBF29BBBA7A00C93D48 /* Balance.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA04EEBE29BBBA7A00C93D48 /* Balance.swift */; };
 		EA04EEC229BD6B7200C93D48 /* BalanceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA04EEC129BD6B7200C93D48 /* BalanceController.swift */; };
+		EA04EEC429BD7A7400C93D48 /* ExpenseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA04EEC329BD7A7400C93D48 /* ExpenseController.swift */; };
+		EA04EEC629BD7C5400C93D48 /* ExpenseCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA04EEC529BD7C5400C93D48 /* ExpenseCellView.swift */; };
 		EA0C281E29B5D8B300D004F7 /* AccountListCellView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0C281D29B5D8B300D004F7 /* AccountListCellView.swift */; };
 		EA0C282029B5DA0800D004F7 /* AccountListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0C281F29B5DA0800D004F7 /* AccountListView.swift */; };
 		EA0C282229B5DC4100D004F7 /* AccountDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA0C282129B5DC4100D004F7 /* AccountDetailView.swift */; };
@@ -46,6 +48,8 @@
 		EA04EEBC29B942D500C93D48 /* Expense.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Expense.swift; sourceTree = "<group>"; };
 		EA04EEBE29BBBA7A00C93D48 /* Balance.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Balance.swift; sourceTree = "<group>"; };
 		EA04EEC129BD6B7200C93D48 /* BalanceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceController.swift; sourceTree = "<group>"; };
+		EA04EEC329BD7A7400C93D48 /* ExpenseController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseController.swift; sourceTree = "<group>"; };
+		EA04EEC529BD7C5400C93D48 /* ExpenseCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseCellView.swift; sourceTree = "<group>"; };
 		EA0C281D29B5D8B300D004F7 /* AccountListCellView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListCellView.swift; sourceTree = "<group>"; };
 		EA0C281F29B5DA0800D004F7 /* AccountListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListView.swift; sourceTree = "<group>"; };
 		EA0C282129B5DC4100D004F7 /* AccountDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailView.swift; sourceTree = "<group>"; };
@@ -101,6 +105,8 @@
 		EA04EEB729B933BE00C93D48 /* Books */ = {
 			isa = PBXGroup;
 			children = (
+				EA04EEB829B933FD00C93D48 /* ExpenseDayView.swift */,
+				EA04EEC529BD7C5400C93D48 /* ExpenseCellView.swift */,
 			);
 			path = Books;
 			sourceTree = "<group>";
@@ -110,7 +116,6 @@
 			children = (
 				EA04EEB629B9338B00C93D48 /* Accounts */,
 				EA04EEB729B933BE00C93D48 /* Books */,
-				EA04EEB829B933FD00C93D48 /* ExpenseDayView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -128,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				EA04EEC129BD6B7200C93D48 /* BalanceController.swift */,
+				EA04EEC329BD7A7400C93D48 /* ExpenseController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -324,7 +330,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA04EEBD29B942D500C93D48 /* Expense.swift in Sources */,
+				EA04EEC429BD7A7400C93D48 /* ExpenseController.swift in Sources */,
 				EA04EEB929B933FD00C93D48 /* ExpenseDayView.swift in Sources */,
+				EA04EEC629BD7C5400C93D48 /* ExpenseCellView.swift in Sources */,
 				EA0C282029B5DA0800D004F7 /* AccountListView.swift in Sources */,
 				EAFA9FA729B5573F00F1D35F /* ContentView.swift in Sources */,
 				EA04EEBF29BBBA7A00C93D48 /* Balance.swift in Sources */,
