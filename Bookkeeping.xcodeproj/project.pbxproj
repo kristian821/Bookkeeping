@@ -54,6 +54,7 @@
 		EA0C281F29B5DA0800D004F7 /* AccountListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountListView.swift; sourceTree = "<group>"; };
 		EA0C282129B5DC4100D004F7 /* AccountDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailView.swift; sourceTree = "<group>"; };
 		EA0C282329B6983900D004F7 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
+		EAF327B02A47BF8B00DC97B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		EAFA9FA129B5573F00F1D35F /* Bookkeeping.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bookkeeping.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EAFA9FA429B5573F00F1D35F /* BookkeepingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookkeepingApp.swift; sourceTree = "<group>"; };
 		EAFA9FA629B5573F00F1D35F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,20 +103,20 @@
 			path = Accounts;
 			sourceTree = "<group>";
 		};
-		EA04EEB729B933BE00C93D48 /* Books */ = {
+		EA04EEB729B933BE00C93D48 /* Expenses */ = {
 			isa = PBXGroup;
 			children = (
 				EA04EEB829B933FD00C93D48 /* ExpenseDayView.swift */,
 				EA04EEC529BD7C5400C93D48 /* ExpenseCellView.swift */,
 			);
-			path = Books;
+			path = Expenses;
 			sourceTree = "<group>";
 		};
 		EA04EEBA29B93A3000C93D48 /* View */ = {
 			isa = PBXGroup;
 			children = (
 				EA04EEB629B9338B00C93D48 /* Accounts */,
-				EA04EEB729B933BE00C93D48 /* Books */,
+				EA04EEB729B933BE00C93D48 /* Expenses */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -161,6 +162,7 @@
 		EAFA9FA329B5573F00F1D35F /* Bookkeeping */ = {
 			isa = PBXGroup;
 			children = (
+				EAF327B02A47BF8B00DC97B8 /* Info.plist */,
 				EAFA9FA429B5573F00F1D35F /* BookkeepingApp.swift */,
 				EAFA9FA629B5573F00F1D35F /* ContentView.swift */,
 				EA04EEC029BD6B5B00C93D48 /* Controllers */,
@@ -500,6 +502,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Bookkeeping/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -510,10 +514,10 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MACOSX_DEPLOYMENT_TARGET = 14;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "Kristian-Mitchell.Bookkeeping";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -531,6 +535,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = Bookkeeping/Bookkeeping.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "-";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Bookkeeping/Preview Content\"";
@@ -538,6 +543,8 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Bookkeeping/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.finance";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -548,12 +555,12 @@
 				"INFOPLIST_KEY_UIStatusBarStyle[sdk=iphonesimulator*]" = UIStatusBarStyleDefault;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 17;
 				LD_RUNPATH_SEARCH_PATHS = "@executable_path/Frameworks";
 				"LD_RUNPATH_SEARCH_PATHS[sdk=macosx*]" = "@executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 13.1;
+				MACOSX_DEPLOYMENT_TARGET = 14;
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Kristian-Mitchell-example.Bookkeeping";
+				PRODUCT_BUNDLE_IDENTIFIER = JamersonLabs.Bookkeeping;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
